@@ -61,9 +61,7 @@
 
 - (void)stopAdvertising {
     NSLog(@"stopAdvertising");
-    if (!self.peripheralManager.isAdvertising) {
-        return;
-    }
+
     [self.peripheralManager stopAdvertising];
 }
 
